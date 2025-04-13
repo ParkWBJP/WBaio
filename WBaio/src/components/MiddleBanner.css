@@ -1,0 +1,56 @@
+.middle-banner {
+    background-color: #ffffff;
+    padding: 20px 5% 120px;
+    color: #000;
+  }
+  
+  .middle-banner .middle-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+  }
+  
+  .middle-banner .left img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  
+  .middle-banner .right {
+    flex: 1;
+  }
+  
+  .middle-banner .right h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    color: #000;
+  }
+  
+  .middle-banner .right p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 24px;
+  }
+  
+  .middle-banner .right .highlight {
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .middle-banner .right button {
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #3f8efc, #9b5bff);
+    color: #fff;
+    cursor: pointer;
+  }
+  

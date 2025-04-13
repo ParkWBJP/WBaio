@@ -1,0 +1,115 @@
+/* 🟦 메인 배너 전체 */
+.main-banner {
+    position: relative;
+    width: 100vw;
+    height: 65vh;
+    background-color: #ffffff; /* ✅ 흰색 배경 */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111
+  }
+  
+  /* 🔄 배경 대화 전체 */
+  .chat-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 80px 20px;
+    z-index: 1;
+    opacity: 0.08;
+    font-size: 16px;
+    line-height: 1.6;
+    pointer-events: none; /* 마우스 방해 방지 */
+  }
+  
+  /* 각 대화 묶음 */
+  .chat-line {
+    max-width: 700px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  /* 애니메이션 주기 */
+  .chat1 {
+    animation: showChat 15s infinite;
+    animation-delay: 0s;
+  }
+  .chat2 {
+    animation: showChat 15s infinite;
+    animation-delay: 5s;
+  }
+  .chat3 {
+    animation: showChat 15s infinite;
+    animation-delay: 10s;
+  }
+  
+  /* 롤링 효과 */
+  @keyframes showChat {
+    0%, 100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    10%, 30% {
+      opacity: 1;
+      visibility: visible;
+    }
+    40%, 90% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  /* 말풍선 스타일 */
+  .chat-bubble {
+    border-radius: 16px;
+    padding: 16px;
+    margin: 12px 0;
+  }
+  .chat-bubble.user {
+    background-color: #005eff;
+    color: white;
+  }
+  .chat-bubble.bot {
+    background-color: white;
+    color: #111;
+  }
+  .chat-bubble .label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  /* 🧠 전경 콘텐츠 */
+  .main-banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0;   /* ✅ 이거도 있으면 함께 조정 */
+    
+  }
+  .main-banner-title {
+    font-size: 50px;
+    line-height: 1.6; 
+    font-weight: bold;
+    margin-bottom: 32px;
+  }
+  .main-banner-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 0;   /* ✅ 이거 추가 */
+    padding-bottom: 0;
+  }
+  .main-banner-logos img {
+    height: 36px;
+  }
+  

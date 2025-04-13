@@ -1,0 +1,87 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 1000;
+}
+
+.header-inner {
+  max-width: 1200px;
+  height: 64px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo img {
+  height: 22px; /* 👈 더 작고 정렬감 있는 사이즈 */
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 28px; /* 👈 메뉴 간격 조정 */
+}
+
+.nav a {
+  font-size: 13px;  /* 👈 조금 더 슬림한 느낌 */
+  font-weight: 600;
+  color: #2b2b2b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #00B7E3;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 1100;
+}
+
+.flag {
+  width: 28px;
+  height: 18px;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px #ddd;
+  margin-right: 2px;
+}
+
+/* ✅ 모바일 대응 (그대로 유지) */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+
+/* floating-contact 버튼 */
+.floating-contact {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00b4e6;
+  color: white;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 30px 30px 30px 5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+.floating-contact:hover {
+  background-color: #0099c5;
+  cursor: pointer;
+}

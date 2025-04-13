@@ -1,0 +1,44 @@
+.footer {
+    background-color: #000;
+    color: #ccc;
+    font-size: 13px;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .footer-top-link {
+    margin-bottom: 20px;
+  }
+  
+  .footer-top-link a {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+  
+  .footer-info p {
+    margin: 6px 0;
+    line-height: 1.8;
+  }
+  
+  .footer-contact a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-contact a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #777;
+  }
+  
