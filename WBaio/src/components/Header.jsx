@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import './header.css';
 
 const Header = ({ language, setLanguage }) => {
   // 텍스트 정의
