@@ -65,23 +65,47 @@
   }
 }
 
-/* floating-contact 버튼 */
-.floating-contact {
+/* 플로팅 버튼 그룹 */
+.floating-buttons {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #00b4e6;
-  color: white;
-  font-weight: bold;
-  padding: 10px 18px;
-  border-radius: 30px 30px 30px 5px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px; /* ✅ 버튼 사이 간격 */
+  z-index: 9999;
+}
+
+/* 공통 버튼 스타일 */
+.floating-buttons a {
+  display: inline-block;
+  padding: 12px 16px;
   font-size: 14px;
-  z-index: 999;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+/* 문의하기 버튼 */
+.floating-contact {
+  background-color: #ff4081;
+  border-radius: 30px 30px 30px 5px; /* ✅ 말풍선 모양 */
 }
 
 .floating-contact:hover {
-  background-color: #0099c5;
-  cursor: pointer;
+  background-color: #e73370;
+}
+
+/* Demo 통계 버튼 */
+.floating-demo {
+  background-color: #4caf50;
+}
+
+.floating-demo:hover {
+  background-color: #43a047;
 }

@@ -78,12 +78,21 @@ const Header = ({ language, setLanguage }) => {
         </div>
       </header>
 
-      {/* 오른쪽 하단 플로팅 버튼 */}
-      <a href="#contact" className="floating-contact">
-        {t.contact}
-      </a>
-    </>
+  {/* 오른쪽 하단 플로팅 버튼 그룹 */}
+  <div className="floating-buttons">
+  <a
+    href="https://aiodashboard.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="floating-demo"
+  >
+    📊 Demo 통계 확인
+  </a>
+  <a href="#contact" className="floating-contact">
+    {t.contact}
+  </a>
+</div>
+</>
   );
 };
-
 export default Header;

@@ -151,7 +151,7 @@ export const translations = {
       bottom2: {
         summaryText: "ワイズバーズは様々なパートナーと共に、迅速かつ堅実に成長しています。",
         countItem1: {
-          number: "4650億円",
+          number: "465億円",
           label: "2024年の取り扱い売上"
         },
         countItem2: {
@@ -161,7 +161,7 @@ export const translations = {
         countItem3: {
           number: "350名",
           label: "専門家数"
-        }
+        },
       },
       faqSection: {
         title: "よくある質問",
